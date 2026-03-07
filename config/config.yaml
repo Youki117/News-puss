@@ -170,7 +170,7 @@ report:
 
   rank_threshold: 5                   # 排名高亮阈值
 
-  max_news_per_keyword: 0             # 每个关键词最大显示数量（0=不限制）
+  max_news_per_keyword: 3             # 每个关键词最大显示数量（0=不限制）
 
 
 # ===============================================================
@@ -191,11 +191,11 @@ display:
   #   1. 在此列表中
   #   2. 下方 regions 中对应开关为 true
   region_order:
-    - new_items                       # 1️⃣ 新增热点区域
+    - ai_analysis                     # 1️⃣ AI 分析区域
     - hotlist                         # 2️⃣ 热榜区域（关键词匹配）
     - rss                             # 3️⃣ RSS 订阅区域
-    - standalone                      # 4️⃣ 独立展示区
-    - ai_analysis                     # 5️⃣ AI 分析区域
+    - new_items                       # 4️⃣ 新增热点区域
+    - standalone                      # 5️⃣ 独立展示区
 
   # 推送区域开关
   # 控制各区域是否启用（配合 region_order 使用）
