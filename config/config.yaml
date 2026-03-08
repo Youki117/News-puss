@@ -129,6 +129,14 @@ rss:
       name: "arXiv cs.CL"
       url: "https://rss.arxiv.org/rss/cs.CL"
 
+    - id: "juya-ai-daily"
+      name: "Juya AI Daily"
+      url: "https://imjuya.github.io/juya-ai-daily/rss.xml"
+
+    - id: "github-weekly"
+      name: "GitHub Weekly"
+      url: "https://itcoffee66.github.io/githubweekly/feed.xml"
+
 
 
 # ===============================================================
@@ -154,7 +162,7 @@ report:
                                       # ⚠️ 开启调度系统后，此值会被当前时间段的 report_mode 覆盖
 
 
-  display_mode: "keyword"             # 分组维度: keyword | platform
+  display_mode: "platform"             # 分组维度: keyword | platform
                                       # keyword: 按关键词分组显示（默认）
                                       # platform: 按平台/来源分组显示
 
@@ -512,3 +520,4 @@ advanced:
     slack: 4000
   batch_send_interval: 3              # 批次发送间隔（秒）
   feishu_message_separator: "━━━━━━━━━━━━━━━━"
+
