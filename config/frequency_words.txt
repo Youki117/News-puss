@@ -1,22 +1,23 @@
 [GLOBAL_FILTER]
 震惊
 娱乐八卦
+彩票
+体育
 
 [WORD_GROUPS]
 
 [AI 模型发布]
-/\b(OpenAI|GPT-5|GPT-4\.1|o1|o3|Sora|Claude|Anthropic|Gemini|DeepMind|Qwen|通义|GLM|Kimi|MiniMax|Llama)\b/i
-发布
-更新
++/\b(OpenAI|ChatGPT|GPT-5|GPT-4\.1|o1|o3|Sora|Anthropic|Claude|Gemini|DeepMind|Qwen|通义|GLM|Kimi|MiniMax|Llama)\b/i
++/发布|更新|上线|开源|发布会|推出|新模型|新版本/
 
 [AI 论文与研究]
-/\b(arXiv|ICLR|NeurIPS|ICML|ACL|EMNLP|CVPR|AAAI|论文|预印本|研究|突破|SOTA|benchmark)\b/i
+/\b(arXiv|ICLR|NeurIPS|ICML|ACL|EMNLP|CVPR|AAAI|论文|预印本|研究|benchmark|SOTA)\b/i
 
 [AI 开源项目与 GitHub]
-/\b(GitHub|开源|repo|agent|RAG|MCP|framework|SDK|模型开源|论文代码)\b/i
+/\b(GitHub|开源|repo|agent|RAG|MCP|framework|SDK|paper code|代码发布)\b/i
 
 [OpenAI 团队]
-/\b(OpenAI|Sam Altman|Mira Murati|Ilya Sutskever|Greg Brockman)\b/i
+/\b(OpenAI|Sam Altman|Ilya Sutskever|Greg Brockman|Mira Murati)\b/i
 
 [Anthropic 团队]
 /\b(Anthropic|Dario Amodei|Claude)\b/i
