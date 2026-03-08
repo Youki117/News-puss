@@ -64,7 +64,7 @@ platforms:
     - id: "thepaper"
       name: "澎湃新闻"
     - id: "bilibili-hot-search"
-      name: "bilibili 热搜"
+      name: "Bilibili热报"
     - id: "cls-hot"
       name: "财联社热门"
     - id: "ifeng"
@@ -122,11 +122,11 @@ rss:
       url: "https://hnrss.org/newest?q=LLM"
 
     - id: "arxiv-cs-ai"
-      name: "arXiv cs.AI"
+      name: "arXiv论文（cs.AI）"
       url: "https://rss.arxiv.org/rss/cs.AI"
 
     - id: "arxiv-cs-cl"
-      name: "arXiv cs.CL"
+      name: "arXiv论文（cs.CL）"
       url: "https://rss.arxiv.org/rss/cs.CL"
 
     - id: "juya-ai-daily"
@@ -134,7 +134,7 @@ rss:
       url: "https://imjuya.github.io/juya-ai-daily/rss.xml"
 
     - id: "github-weekly"
-      name: "GitHub Weekly"
+      name: "GitHub项目加星飙升榜"
       url: "https://itcoffee66.github.io/githubweekly/feed.xml"
 
 
