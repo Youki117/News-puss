@@ -113,22 +113,6 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hn-ai"
-      name: "Hacker News AI"
-      url: "https://hnrss.org/newest?q=AI"
-
-    - id: "hn-llm"
-      name: "Hacker News LLM"
-      url: "https://hnrss.org/newest?q=LLM"
-
-    - id: "arxiv-cs-ai"
-      name: "arXiv论文（cs.AI）"
-      url: "https://rss.arxiv.org/rss/cs.AI"
-
-    - id: "arxiv-cs-cl"
-      name: "arXiv论文（cs.CL）"
-      url: "https://rss.arxiv.org/rss/cs.CL"
-
     - id: "juya-ai-daily"
       name: "Juya AI Daily"
       url: "https://imjuya.github.io/juya-ai-daily/rss.xml"
@@ -137,6 +121,373 @@ rss:
       name: "GitHub项目加星飙升榜"
       url: "https://itcoffee66.github.io/githubweekly/feed.xml"
 
+    - id: "hn-blog-simonwillison-net"
+      name: "simonwillison.net"
+      url: "https://simonwillison.net/atom/everything/"
+
+    - id: "hn-blog-jeffgeerling-com"
+      name: "jeffgeerling.com"
+      url: "https://www.jeffgeerling.com/blog.xml"
+
+    - id: "hn-blog-seangoedecke-com"
+      name: "seangoedecke.com"
+      url: "https://www.seangoedecke.com/rss.xml"
+
+    - id: "hn-blog-krebsonsecurity-com"
+      name: "krebsonsecurity.com"
+      url: "https://krebsonsecurity.com/feed/"
+
+    - id: "hn-blog-daringfireball-net"
+      name: "daringfireball.net"
+      url: "https://daringfireball.net/feeds/main"
+
+    - id: "hn-blog-ericmigi-com"
+      name: "ericmigi.com"
+      url: "https://ericmigi.com/rss.xml"
+
+    - id: "hn-blog-antirez-com"
+      name: "antirez.com"
+      url: "http://antirez.com/rss"
+
+    - id: "hn-blog-idiallo-com"
+      name: "idiallo.com"
+      url: "https://idiallo.com/feed.rss"
+
+    - id: "hn-blog-maurycyz-com"
+      name: "maurycyz.com"
+      url: "https://maurycyz.com/index.xml"
+
+    - id: "hn-blog-pluralistic-net"
+      name: "pluralistic.net"
+      url: "https://pluralistic.net/feed/"
+
+    - id: "hn-blog-shkspr-mobi"
+      name: "shkspr.mobi"
+      url: "https://shkspr.mobi/blog/feed/"
+
+    - id: "hn-blog-lcamtuf-substack-com"
+      name: "lcamtuf.substack.com"
+      url: "https://lcamtuf.substack.com/feed"
+
+    - id: "hn-blog-mitchellh-com"
+      name: "mitchellh.com"
+      url: "https://mitchellh.com/feed.xml"
+
+    - id: "hn-blog-dynomight-net"
+      name: "dynomight.net"
+      url: "https://dynomight.net/feed.xml"
+
+    - id: "hn-blog-utcc-utoronto-ca-cks"
+      name: "utcc.utoronto.ca/~cks"
+      url: "https://utcc.utoronto.ca/~cks/space/blog/?atom"
+
+    - id: "hn-blog-xeiaso-net"
+      name: "xeiaso.net"
+      url: "https://xeiaso.net/blog.rss"
+
+    - id: "hn-blog-devblogs-microsoft-com-oldnewthing"
+      name: "devblogs.microsoft.com/oldnewthing"
+      url: "https://devblogs.microsoft.com/oldnewthing/feed"
+
+    - id: "hn-blog-righto-com"
+      name: "righto.com"
+      url: "https://www.righto.com/feeds/posts/default"
+
+    - id: "hn-blog-lucumr-pocoo-org"
+      name: "lucumr.pocoo.org"
+      url: "https://lucumr.pocoo.org/feed.atom"
+
+    - id: "hn-blog-skyfall-dev"
+      name: "skyfall.dev"
+      url: "https://skyfall.dev/rss.xml"
+
+    - id: "hn-blog-garymarcus-substack-com"
+      name: "garymarcus.substack.com"
+      url: "https://garymarcus.substack.com/feed"
+
+    - id: "hn-blog-rachelbythebay-com"
+      name: "rachelbythebay.com"
+      url: "https://rachelbythebay.com/w/atom.xml"
+
+    - id: "hn-blog-overreacted-io"
+      name: "overreacted.io"
+      url: "https://overreacted.io/rss.xml"
+
+    - id: "hn-blog-timsh-org"
+      name: "timsh.org"
+      url: "https://timsh.org/rss/"
+
+    - id: "hn-blog-johndcook-com"
+      name: "johndcook.com"
+      url: "https://www.johndcook.com/blog/feed/"
+
+    - id: "hn-blog-gilesthomas-com"
+      name: "gilesthomas.com"
+      url: "https://gilesthomas.com/feed/rss.xml"
+
+    - id: "hn-blog-matklad-github-io"
+      name: "matklad.github.io"
+      url: "https://matklad.github.io/feed.xml"
+
+    - id: "hn-blog-derekthompson-org"
+      name: "derekthompson.org"
+      url: "https://www.theatlantic.com/feed/author/derek-thompson/"
+
+    - id: "hn-blog-evanhahn-com"
+      name: "evanhahn.com"
+      url: "https://evanhahn.com/feed.xml"
+
+    - id: "hn-blog-terriblesoftware-org"
+      name: "terriblesoftware.org"
+      url: "https://terriblesoftware.org/feed/"
+
+    - id: "hn-blog-rakhim-exotext-com"
+      name: "rakhim.exotext.com"
+      url: "https://rakhim.exotext.com/rss.xml"
+
+    - id: "hn-blog-joanwestenberg-com"
+      name: "joanwestenberg.com"
+      url: "https://joanwestenberg.com/rss"
+
+    - id: "hn-blog-xania-org"
+      name: "xania.org"
+      url: "https://xania.org/feed"
+
+    - id: "hn-blog-micahflee-com"
+      name: "micahflee.com"
+      url: "https://micahflee.com/feed/"
+
+    - id: "hn-blog-nesbitt-io"
+      name: "nesbitt.io"
+      url: "https://nesbitt.io/feed.xml"
+
+    - id: "hn-blog-construction-physics-com"
+      name: "construction-physics.com"
+      url: "https://www.construction-physics.com/feed"
+
+    - id: "hn-blog-tedium-co"
+      name: "tedium.co"
+      url: "https://feed.tedium.co/"
+
+    - id: "hn-blog-susam-net"
+      name: "susam.net"
+      url: "https://susam.net/feed.xml"
+
+    - id: "hn-blog-entropicthoughts-com"
+      name: "entropicthoughts.com"
+      url: "https://entropicthoughts.com/feed.xml"
+
+    - id: "hn-blog-buttondown-com-hillelwayne"
+      name: "buttondown.com/hillelwayne"
+      url: "https://buttondown.com/hillelwayne/rss"
+
+    - id: "hn-blog-dwarkesh-com"
+      name: "dwarkesh.com"
+      url: "https://www.dwarkeshpatel.com/feed"
+
+    - id: "hn-blog-borretti-me"
+      name: "borretti.me"
+      url: "https://borretti.me/feed.xml"
+
+    - id: "hn-blog-wheresyoured-at"
+      name: "wheresyoured.at"
+      url: "https://www.wheresyoured.at/rss/"
+
+    - id: "hn-blog-jayd-ml"
+      name: "jayd.ml"
+      url: "https://jayd.ml/feed.xml"
+
+    - id: "hn-blog-minimaxir-com"
+      name: "minimaxir.com"
+      url: "https://minimaxir.com/index.xml"
+
+    - id: "hn-blog-geohot-github-io"
+      name: "geohot.github.io"
+      url: "https://geohot.github.io/blog/feed.xml"
+
+    - id: "hn-blog-paulgraham-com"
+      name: "paulgraham.com"
+      url: "http://www.aaronsw.com/2002/feeds/pgessays.rss"
+
+    - id: "hn-blog-filfre-net"
+      name: "filfre.net"
+      url: "https://www.filfre.net/feed/"
+
+    - id: "hn-blog-blog-jim-nielsen-com"
+      name: "blog.jim-nielsen.com"
+      url: "https://blog.jim-nielsen.com/feed.xml"
+
+    - id: "hn-blog-dfarq-homeip-net"
+      name: "dfarq.homeip.net"
+      url: "https://dfarq.homeip.net/feed/"
+
+    - id: "hn-blog-jyn-dev"
+      name: "jyn.dev"
+      url: "https://jyn.dev/atom.xml"
+
+    - id: "hn-blog-geoffreylitt-com"
+      name: "geoffreylitt.com"
+      url: "https://www.geoffreylitt.com/feed.xml"
+
+    - id: "hn-blog-downtowndougbrown-com"
+      name: "downtowndougbrown.com"
+      url: "https://www.downtowndougbrown.com/feed/"
+
+    - id: "hn-blog-brutecat-com"
+      name: "brutecat.com"
+      url: "https://brutecat.com/rss.xml"
+
+    - id: "hn-blog-eli-thegreenplace-net"
+      name: "eli.thegreenplace.net"
+      url: "https://eli.thegreenplace.net/feeds/all.atom.xml"
+
+    - id: "hn-blog-abortretry-fail"
+      name: "abortretry.fail"
+      url: "https://www.abortretry.fail/feed"
+
+    - id: "hn-blog-fabiensanglard-net"
+      name: "fabiensanglard.net"
+      url: "https://fabiensanglard.net/rss.xml"
+
+    - id: "hn-blog-oldvcr-blogspot-com"
+      name: "oldvcr.blogspot.com"
+      url: "https://oldvcr.blogspot.com/feeds/posts/default"
+
+    - id: "hn-blog-bogdanthegeek-github-io"
+      name: "bogdanthegeek.github.io"
+      url: "https://bogdanthegeek.github.io/blog/index.xml"
+
+    - id: "hn-blog-hugotunius-se"
+      name: "hugotunius.se"
+      url: "https://hugotunius.se/feed.xml"
+
+    - id: "hn-blog-gwern-net"
+      name: "gwern.net"
+      url: "https://gwern.substack.com/feed"
+
+    - id: "hn-blog-berthub-eu"
+      name: "berthub.eu"
+      url: "https://berthub.eu/articles/index.xml"
+
+    - id: "hn-blog-chadnauseam-com"
+      name: "chadnauseam.com"
+      url: "https://chadnauseam.com/rss.xml"
+
+    - id: "hn-blog-simone-org"
+      name: "simone.org"
+      url: "https://simone.org/feed/"
+
+    - id: "hn-blog-it-notes-dragas-net"
+      name: "it-notes.dragas.net"
+      url: "https://it-notes.dragas.net/feed/"
+
+    - id: "hn-blog-beej-us"
+      name: "beej.us"
+      url: "https://beej.us/blog/rss.xml"
+
+    - id: "hn-blog-hey-paris"
+      name: "hey.paris"
+      url: "https://hey.paris/index.xml"
+
+    - id: "hn-blog-danielwirtz-com"
+      name: "danielwirtz.com"
+      url: "https://danielwirtz.com/rss.xml"
+
+    - id: "hn-blog-matduggan-com"
+      name: "matduggan.com"
+      url: "https://matduggan.com/rss/"
+
+    - id: "hn-blog-refactoringenglish-com"
+      name: "refactoringenglish.com"
+      url: "https://refactoringenglish.com/index.xml"
+
+    - id: "hn-blog-worksonmymachine-substack-com"
+      name: "worksonmymachine.substack.com"
+      url: "https://worksonmymachine.substack.com/feed"
+
+    - id: "hn-blog-philiplaine-com"
+      name: "philiplaine.com"
+      url: "https://philiplaine.com/index.xml"
+
+    - id: "hn-blog-steveblank-com"
+      name: "steveblank.com"
+      url: "https://steveblank.com/feed/"
+
+    - id: "hn-blog-bernsteinbear-com"
+      name: "bernsteinbear.com"
+      url: "https://bernsteinbear.com/feed.xml"
+
+    - id: "hn-blog-danieldelaney-net"
+      name: "danieldelaney.net"
+      url: "https://danieldelaney.net/feed"
+
+    - id: "hn-blog-troyhunt-com"
+      name: "troyhunt.com"
+      url: "https://www.troyhunt.com/rss/"
+
+    - id: "hn-blog-herman-bearblog-dev"
+      name: "herman.bearblog.dev"
+      url: "https://herman.bearblog.dev/feed/"
+
+    - id: "hn-blog-tomrenner-com"
+      name: "tomrenner.com"
+      url: "https://tomrenner.com/index.xml"
+
+    - id: "hn-blog-blog-pixelmelt-dev"
+      name: "blog.pixelmelt.dev"
+      url: "https://blog.pixelmelt.dev/rss/"
+
+    - id: "hn-blog-martinalderson-com"
+      name: "martinalderson.com"
+      url: "https://martinalderson.com/feed.xml"
+
+    - id: "hn-blog-danielchasehooper-com"
+      name: "danielchasehooper.com"
+      url: "https://danielchasehooper.com/feed.xml"
+
+    - id: "hn-blog-chiark-greenend-org-uk-sgtatham"
+      name: "chiark.greenend.org.uk/~sgtatham"
+      url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml"
+
+    - id: "hn-blog-grantslatton-com"
+      name: "grantslatton.com"
+      url: "https://grantslatton.com/rss.xml"
+
+    - id: "hn-blog-experimental-history-com"
+      name: "experimental-history.com"
+      url: "https://www.experimental-history.com/feed"
+
+    - id: "hn-blog-anildash-com"
+      name: "anildash.com"
+      url: "https://anildash.com/feed.xml"
+
+    - id: "hn-blog-aresluna-org"
+      name: "aresluna.org"
+      url: "https://aresluna.org/main.rss"
+
+    - id: "hn-blog-michael-stapelberg-ch"
+      name: "michael.stapelberg.ch"
+      url: "https://michael.stapelberg.ch/feed.xml"
+
+    - id: "hn-blog-miguelgrinberg-com"
+      name: "miguelgrinberg.com"
+      url: "https://blog.miguelgrinberg.com/feed"
+
+    - id: "hn-blog-keygen-sh"
+      name: "keygen.sh"
+      url: "https://keygen.sh/blog/feed.xml"
+
+    - id: "hn-blog-mjg59-dreamwidth-org"
+      name: "mjg59.dreamwidth.org"
+      url: "https://mjg59.dreamwidth.org/data/rss"
+
+    - id: "hn-blog-computer-rip"
+      name: "computer.rip"
+      url: "https://computer.rip/rss.xml"
+
+    - id: "hn-blog-tedunangst-com"
+      name: "tedunangst.com"
+      url: "https://www.tedunangst.com/flak/rss"
 
 
 # ===============================================================
