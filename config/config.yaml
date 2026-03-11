@@ -91,6 +91,11 @@ platforms:
 rss:
   enabled: true                       # 是否启用 RSS 抓取
 
+  # RSS 关键词过滤配置
+  # enabled: false 时，RSS 不使用 frequency_words.txt 做筛选，完整保留所有订阅内容
+  keyword_filter:
+    enabled: false
+
   # 文章新鲜度过滤配置（全局默认值）
   # 过滤掉发布时间超过指定天数的旧文章，避免同一篇文章重复出现在推送中
   #
@@ -102,7 +107,7 @@ rss:
   #    - 所有文章都会存入数据库（MCP Server 的 AI 查询仍可访问）
   #    - 只有新鲜的文章会被推送到通知渠道
   freshness_filter:
-    enabled: true                     # 是否启用新鲜度过滤（默认启用）
+    enabled: false                     # 是否启用新鲜度过滤（默认启用）
 
     max_age_days: 3                   # 最大文章年龄（天）
                                       # - 正整数：只推送 N 天内的文章
@@ -524,7 +529,7 @@ report:
 
   rank_threshold: 5                   # 排名高亮阈值
 
-  max_news_per_keyword: 2             # 每个关键词最大显示数量（0=不限制）
+  max_news_per_keyword: 0             # 每个关键词最大显示数量（0=不限制）
 
 
 # ===============================================================

@@ -193,7 +193,7 @@ def _load_rss_config(config_data: Dict) -> Dict:
 
     # 新鲜度过滤配置
     freshness_filter = rss.get("freshness_filter", {})
-
+    keyword_filter = rss.get("keyword_filter", {})
     # 验证并设置 max_age_days 默认值
     raw_max_age = freshness_filter.get("max_age_days", 3)
     try:
@@ -216,6 +216,9 @@ def _load_rss_config(config_data: Dict) -> Dict:
         "FRESHNESS_FILTER": {
             "ENABLED": freshness_filter.get("enabled", True),  # 默认启用
             "MAX_AGE_DAYS": max_age_days,
+        },
+        "KEYWORD_FILTER": {
+            "ENABLED": keyword_filter.get("enabled", True),  # 默认启用
         },
     }
 

@@ -1155,12 +1155,18 @@ class NewsAnalyzer:
         # 从 display.regions.rss 统一控制 RSS 分析和展示
         rss_display_enabled = self.ctx.config.get("DISPLAY", {}).get("REGIONS", {}).get("RSS", True)
 
-        # 加载关键词配置
-        try:
-            word_groups, filter_words, global_filters = self.ctx.load_frequency_words()
-        except FileNotFoundError:
+        # RSS 可单独关闭关键词过滤，保留所有订阅内容
+        rss_keyword_filter_enabled = (
+            self.ctx.rss_config.get("KEYWORD_FILTER", {}).get("ENABLED", True)
+        )
+        if rss_keyword_filter_enabled:
+            try:
+                word_groups, filter_words, global_filters = self.ctx.load_frequency_words()
+            except FileNotFoundError:
+                word_groups, filter_words, global_filters = [], [], []
+        else:
             word_groups, filter_words, global_filters = [], [], []
-
+            print("[RSS] 已禁用关键词过滤，完整保留所有订阅内容")
         timezone = self.ctx.timezone
         max_news_per_keyword = self.ctx.config.get("MAX_NEWS_PER_KEYWORD", 0)
         sort_by_position_first = self.ctx.config.get("SORT_BY_POSITION_FIRST", False)
